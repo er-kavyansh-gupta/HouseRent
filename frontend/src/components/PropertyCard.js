@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PropertyCard = ({ property }) => {
-    const imageUrl = property.image ? `http://localhost:5000/${property.image}` : "https://via.placeholder.com/300x200?text=Property+Image";
+    const imageUrl = property.image ? `https://house-rent-aj7u.onrender.com/${property.image}` : "https://via.placeholder.com/300x200?text=Property+Image";
 
     return (
         <div className="property-card-wrapper h-100">

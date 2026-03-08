@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance with base URL
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api', // adjust if your backend runs on a different port
+    baseURL: 'https://house-rent-aj7u.onrender.com', // adjust if your backend runs on a different port
 });
 
 // Interceptor to add JWT token to requests if available
