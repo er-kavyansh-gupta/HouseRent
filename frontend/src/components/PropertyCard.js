@@ -19,7 +19,7 @@ const PropertyCard = ({ property }) => {
                     <h6 className="card-subtitle mb-2 text-muted">{property.location}</h6>
                     <p className="card-text text-truncate">{property.description}</p>
                     <div className="mt-auto">
-                        <p className="fw-bold mb-2">${property.price} / month</p>
+                        <p className="fw-bold mb-2">₹{property.price} / month</p>
                         <div className="d-flex justify-content-between align-items-center">
                             <span className="badge bg-secondary">{property.type}</span>
                             <Link to={`/property/${property._id}`} className="btn btn-primary btn-sm">
