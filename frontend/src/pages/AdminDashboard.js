@@ -106,7 +106,7 @@ const AdminDashboard = () => {
                                     <tr key={property._id}>
                                         <td><Link to={`/property/${property._id}`}>{property.title}</Link></td>
                                         <td>{property.owner?.name || property.owner || 'Unknown'}</td>
-                                        <td>${property.price}</td>
+                                        <td>₹{property.price}</td>
                                         <td>{property.location}</td>
                                         <td>
                                             <button

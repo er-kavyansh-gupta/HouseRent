@@ -132,7 +132,7 @@ const Dashboard = () => {
                                     <div className="card h-100 shadow-sm border-0 rounded-4">
                                         <div className="card-body">
                                             <h5 className="card-title text-truncate">{property.title}</h5>
-                                            <p className="card-text">${property.price} / month | {property.location}</p>
+                                            <p className="card-text">₹{property.price} / month | {property.location}</p>
 
                                             <div className="mt-3 d-flex justify-content-between">
                                                 <Link to={`/property/${property._id}`} className="btn btn-outline-primary btn-sm">

@@ -96,7 +96,7 @@ const PropertyDetails = () => {
 
                                 <div className="d-flex gap-3 mb-4">
                                     <span className="badge bg-secondary fs-6 px-3 py-2 rounded-pill">{property.type}</span>
-                                    <span className="badge bg-primary fs-6 px-3 py-2 rounded-pill shadow-sm">${property.price} / month</span>
+                                    <span className="badge bg-primary fs-6 px-3 py-2 rounded-pill shadow-sm">₹{property.price} / month</span>
                                 </div>
 
                                 <h4>Description</h4>
@@ -137,7 +137,7 @@ const PropertyDetails = () => {
                                             className="btn btn-primary btn-lg w-100 fw-bold shadow-sm"
                                             style={{ borderRadius: '12px', transition: 'all 0.3s ease' }}
                                         >
-                                            {`Book for $${property.price}`}
+                                            {`Book for ₹${property.price}`}
                                         </button>
                                     </form>
                                 ) : (
@@ -163,7 +163,7 @@ const PropertyDetails = () => {
                             </div>
                             <div className="modal-body p-4">
                                 <div className="mb-4 text-center">
-                                    <h4 className="fw-bold text-primary mb-1">${property.price}</h4>
+                                    <h4 className="fw-bold text-primary mb-1">₹{property.price}</h4>
                                     <p className="text-muted mb-0">Total amount for {property.title}</p>
                                 </div>
                                 <form onSubmit={processPaymentAndBook}>
@@ -213,7 +213,7 @@ const PropertyDetails = () => {
                                         {paymentProcessing ? (
                                             <><span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Processing...</>
                                         ) : (
-                                            `Pay $${property.price} Now`
+                                            `Pay ₹${property.price} Now`
                                         )}
                                     </button>
                                 </form>
