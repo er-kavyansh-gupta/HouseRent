@@ -95,7 +95,7 @@ const AddProperty = () => {
 
                             <div className="row mb-3">
                                 <div className="col-md-6">
-                                    <label className="form-label">Price (Monthly $)</label>
+                                    <label className="form-label">Price (Monthly ₹)</label>
                                     <input
                                         type="number"
                                         className="form-control"
